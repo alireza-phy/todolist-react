@@ -1,0 +1,56 @@
+.items {
+    text-align: left;
+    line-height: 20px;
+    margin-bottom: 40px ;
+    height: 25vh;
+    overflow-y: auto;
+    max-height: 25vh;
+    font-size: 15px;
+    color: rgb(255, 225, 226);
+    width: inherit;
+}
+
+
+.items::-webkit-scrollbar {
+    width: 6px;
+}
+
+.items::-webkit-scrollbar-track {
+    background-color: #0f2b55;
+    border-radius: 10px;
+}
+
+.items::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.addItemBtn {
+    position: relative;
+    bottom: 5px;
+    left: 30%;
+}
+
+.items dt {
+    background-color: #0f2b55;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.closeItemBtn , .editItemBtn {
+    visibility: hidden;
+    width: 15px;
+    margin-left: 5px;
+    margin-top: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+
+.itemRow:hover .closeItemBtn  {
+    visibility: visible;
+}
+.itemRow:hover .editItemBtn  {
+    visibility: visible;
+}
